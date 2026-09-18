@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Green Future Initiative</title>
+
+    ```
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-green: #1e4d2b;
+            --secondary-green: #2d6a4f;
+            --accent-lime: #a3c9a8;
+            --light-bg: #f4f9f4;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: var(--light-bg);
+            color: #1b2e1b;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 1.5rem;
+            width: 100%;
+        }
+
+        header {
+            background: var(--primary-green);
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                font-weight: 600;
+                padding: 0.5rem;
+            }
+
+                .nav-links a:hover,
+                .nav-links a.active {
+                    color: var(--accent-lime);
+                }
+
+        main {
+            flex: 1;
+            padding: 3rem 0;
+        }
+
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-green);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .donation-box {
+            background: white;
+            max-width: 600px;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .donation-option {
+            background: var(--light-bg);
+            padding: 1rem;
+            margin: 0.75rem 0;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: var(--primary-green);
+            color: #cddec4;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+            footer p {
+                margin: 0;
+            }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.8rem;
+            }
+        }
+    </style>
+    ```
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Green Future Initiative</div>
+
+            ```
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Our Projects</a></li>
+                    <li><a href="involved.html">Get Involved</a></li>
+                    <li><a href="donate.html" class="active">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        ```
+
+    </header>
+
+    <main class="container">
+
+        ```
+        <h1>Support Green Future Initiative</h1>
+
+        <p>
+            Your donation helps us plant trees, maintain community gardens,
+            educate young people and promote sustainable living.
+        </p>
+
+        <div class="donation-box">
+
+            <h2>How You Can Help</h2>
+
+            <div class="donation-option">
+                <strong>R100</strong> — Helps support tree planting.
+            </div>
+
+            <div class="donation-option">
+                <strong>R250</strong> — Helps support environmental education.
+            </div>
+
+            <div class="donation-option">
+                <strong>R500</strong> — Helps support community garden projects.
+            </div>
+
+            <h2>Donation Details</h2>
+
+            <p>
+                Bank: Green Future Initiative<br>
+                Account Number: 0000000000<br>
+                Branch Code: 000000
+            </p>
+
+            <p>
+                Please use your name as the payment reference.
+            </p>
+
+        </div>
+        ```
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Green Future Initiative. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
