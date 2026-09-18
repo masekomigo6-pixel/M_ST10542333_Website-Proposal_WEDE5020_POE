@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Future Initiative | Home</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-green: #1e4d2b;
+            --secondary-green: #2d6a4f;
+            --accent-lime: #a3c9a8;
+            --light-bg: #f4f9f4;
+            --text-dark: #1b2e1b;
+            --text-light: #ffffff;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 1.5rem;
+            width: 100%;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-green);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+        }
+
+        /* NAVIGATION */
+        header {
+            background-color: var(--primary-green);
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                font-weight: 600;
+                padding: 0.5rem;
+            }
+
+                .nav-links a:hover,
+                .nav-links a.active {
+                    color: var(--accent-lime);
+                }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            background: linear-gradient(135deg, #e5f0e5, #c8e0c8);
+            padding: 5rem 1.5rem;
+            border-radius: 0 0 40px 40px;
+        }
+
+            .hero p {
+                max-width: 700px;
+                margin: 0 auto 2rem;
+            }
+
+        /* PROFESSIONAL HERO IMAGE */
+        .hero-image {
+            display: block;
+            width: 100%;
+            max-width: 900px;
+            height: 350px;
+            object-fit: cover;
+            margin: 2rem auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-lime);
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 700;
+            padding: 0.8rem 2rem;
+            border-radius: 40px;
+        }
+
+            .cta-button:hover {
+                background-color: var(--secondary-green);
+                color: white;
+            }
+
+        /* STATS */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem 0 3rem;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-bottom: 4px solid var(--accent-lime);
+        }
+
+        .stat-number {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--secondary-green);
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            background-color: var(--primary-green);
+            color: #cddec4;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+            footer p {
+                margin: 0.2rem;
+                font-size: 0.9rem;
+            }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 768px) {
+
+            .nav-container {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.8rem;
+            }
+
+            .hero {
+                padding: 3rem 1rem;
+            }
+
+                .hero h1 {
+                    font-size: 2.2rem;
+                }
+
+            .hero-image {
+                height: 250px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="container nav-container">
+
+            <div class="logo">
+                Green Future Initiative
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Our Projects</a></li>
+                    <li><a href="involved.html">Get Involved</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="container">
+
+                <h1>Building Greener Urban Communities</h1>
+
+                <p>
+                    Join us in planting trees, educating our youth,
+                    and advocating for sustainable living in Johannesburg.
+                </p>
+
+                <!-- PROFESSIONAL ENVIRONMENTAL IMAGE -->
+                <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1200&q=80"
+                     alt="Green plants and sustainable environment"
+                     class="hero-image">
+
+                <!-- BUTTONS -->
+                <div class="btn-group">
+
+                    <a href="donate.html" class="cta-button">
+                        Donate Now
+                    </a>
+
+                    <a href="involved.html" class="cta-button">
+                        Volunteer
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- IMPACT SECTION -->
+        <section class="container">
+
+            <h2 style="text-align:center; margin-top:2rem;">
+                Our Impact
+            </h2>
+
+            <div class="stats-grid">
+
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <p>Community Gardens Established</p>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <p>Educational Workshops</p>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-number">2018</span>
+                    <p>Year Founded</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            &copy; 2026 Green Future Initiative. All rights reserved.
+        </p>
+
+        <p>
+            Johannesburg, South Africa
+        </p>
+
+    </footer>
+
+</body>
+</html>
