@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Green Future Initiative</title>
+
+    ```
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-green: #1e4d2b;
+            --secondary-green: #2d6a4f;
+            --accent-lime: #a3c9a8;
+            --light-bg: #f4f9f4;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: var(--light-bg);
+            color: #1b2e1b;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 1.5rem;
+            width: 100%;
+        }
+
+        header {
+            background: var(--primary-green);
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                font-weight: 600;
+                padding: 0.5rem;
+            }
+
+                .nav-links a:hover,
+                .nav-links a.active {
+                    color: var(--accent-lime);
+                }
+
+        main {
+            flex: 1;
+            padding: 3rem 0;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-green);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-bottom: 4px solid var(--accent-lime);
+        }
+
+        form {
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #c0d6c0;
+            border-radius: 8px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background: var(--accent-lime);
+            color: var(--primary-green);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background: var(--secondary-green);
+                color: white;
+            }
+
+        footer {
+            background: var(--primary-green);
+            color: #cddec4;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+            footer p {
+                margin: 0;
+            }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.8rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    ```
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Green Future Initiative</div>
+
+            ```
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Our Projects</a></li>
+                    <li><a href="involved.html">Get Involved</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        ```
+
+    </header>
+
+    <main class="container">
+
+        ```
+        <h1>Contact Us</h1>
+
+        <div class="stats-grid">
+
+            <div class="stat-item">
+                <h3>Address</h3>
+                <p>123 Green Street, Johannesburg, 2001</p>
+            </div>
+
+            <div class="stat-item">
+                <h3>Email</h3>
+                <p>info@greenfuture.org.za</p>
+            </div>
+
+            <div class="stat-item">
+                <h3>Social Media</h3>
+                <p>Facebook | Instagram</p>
+            </div>
+
+        </div>
+
+        <h2>Send us a message</h2>
+
+        <form action="#" method="post">
+
+            <input type="text"
+                   name="name"
+                   placeholder="Your Name"
+                   required>
+
+            <input type="email"
+                   name="email"
+                   placeholder="Your Email"
+                   required>
+
+            <textarea name="message"
+                      placeholder="Your Message"
+                      rows="5"
+                      required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+        ```
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Green Future Initiative. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
